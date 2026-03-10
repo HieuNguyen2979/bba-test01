@@ -1,9 +1,24 @@
-let playername = 'Mario';
-let currentLives = 3;
-const level1 = 25;
-const level2= 30;
-const level3=45;
-let total, avg;
-total = level1+level2+level3;
-avg = total/3;
-console.log(total%3);
+let powerUp = 'mushroom';
+switch (powerUp) {
+    case "mushroom":
+        effect ="Mario become Supper";
+        console.log(effect);
+        break;
+    case "flower":
+        effect ="Mario can shoot fireballs";
+        console.log(effect);
+        break;
+    case "star":
+        effect ="Mario is invincible";
+        console.log(effect);
+        break;
+    case "none":
+        effect ="Mario is normal";
+        console.log(effect);
+        break;        
+
+    default:
+        effect ="Unknown power-up";
+        console.log(effect);
+        break;
+}
